@@ -2,6 +2,7 @@
 
 body {
     background-image: linear-gradient(to right, #e0c3fc 0%, #8ec5fc 100%);
+    font-family: 'Ubuntu', sans-serif;
     color: #424874;
 }
 
@@ -10,6 +11,36 @@ body {
 }
 
 .heading {
-    font-family: 'Ubuntu', sans-serif;
     font-size: 3.5rem;
+    padding-bottom: 10%;
+}
+
+.play-area {
+    text-align: center;
+}
+
+.start-ques {
+    font-size: 2.5rem;
+}
+
+.choice-button {
+    background-color: transparent;
+    border: 3px white solid;
+    border-radius: 25px;
+
+    width: 150px;
+    height: 70px;
+
+    font-size: 1.5rem;
+    color: white;
+
+    margin: 1% 2%;
+}
+
+.yes-button:hover {
+    background-color: #8400ff;
+}
+
+.no-button:hover {
+    background-color: #0080ff;
 }
