@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+body {
+    background-image: linear-gradient(to right, #e0c3fc 0%, #8ec5fc 100%);
+    color: #424874;
+}
+
+.title {
+    text-align: center;
+}
+
+.heading {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3.5rem;
+}
