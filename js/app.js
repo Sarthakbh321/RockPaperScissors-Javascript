@@ -9,13 +9,16 @@ $(document).ready(function() {
         $(".player-score-value").text(player_score);
         $(".computer-score-value").text(computer_score);
 
-        $(".starting-screen").fadeOut(1000, function() {
-            $(".heading").css("padding-bottom", "5%");
-            $(".play-section").fadeIn(1000);
+        $(".starting-screen").fadeOut(500, function() {
+            $(".heading").css("margin-bottom", "5%");
+            $(".play-section").fadeIn(500);
         });
 
-        
 
+        $(".rock-button").click(function() {
+            
+        })
+        
     })
 
 })
