@@ -27,7 +27,7 @@ body {
 
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-content: center;
 
     margin: auto;
 }
@@ -95,7 +95,6 @@ body {
     height: 200px;
 
     position: relative;
-
 }
 
 .player-hand {
@@ -104,8 +103,6 @@ body {
 
 .computer-hand {
     left: 10%;
-
-    transform: scaleX(-1);
 }
 
 @media screen and (max-width: 450px) {
@@ -143,4 +140,32 @@ body {
     color: white;
     border-color: #961333;
     border-width: 5px;
+}
+
+.upDown-animation {
+    animation-name: upDown;
+    animation-duration: 1s;
+}
+
+
+@keyframes upDown {
+    0% {
+        transform: translateY(0);
+    }
+    
+    25% {
+        transform: translateY(-20%);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    75% {
+        transform: translateY(-20%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
