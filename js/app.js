@@ -24,14 +24,43 @@ $(document).ready(function() {
         $(".hand").addClass("upDown-animation");
 
         setTimeout(function() {
+            $(".player-hand").attr("src", "assets/rock-hand.png")
+
             if(answer === 2) {
-                alert("YOU WON");
                 $(".player-score-value").text(++player_score);
+                $(".result").text("YOU WON");
+                $(".result-box").fadeIn(100);
+
+                $(".computer-hand").attr("src", "assets/scissor-hand-comp.png");
+
+                setTimeout(function() {
+                    $(".result-box").fadeOut(200);
+                    $(".player-hand").attr("src", "assets/rock-hand.png");
+                    $(".computer-hand").attr("src", "assets/rock-hand-comp.png");
+                }, 1000)
             } else if(answer == 0) {
-                alert("TIE");
+                $(".result").text("IT'S A TIE");
+                $(".result-box").fadeIn(100);
+
+                $(".computer-hand").attr("src", "assets/rock-hand-comp.png");
+
+                setTimeout(function() {
+                    $(".result-box").fadeOut(200);
+                    $(".player-hand").attr("src", "assets/rock-hand.png");
+                    $(".computer-hand").attr("src", "assets/rock-hand-comp.png");
+                }, 1000)
             } else {
-                alert("YOU LOST!");
+                $(".result").text("YOU LOST");
                 $(".computer-score-value").text(++computer_score);
+                $(".result-box").fadeIn(100);
+
+                $(".computer-hand").attr("src", "assets/paper-hand-comp.png");
+
+                setTimeout(function() {
+                    $(".result-box").fadeOut(200);
+                    $(".player-hand").attr("src", "assets/rock-hand.png");
+                    $(".computer-hand").attr("src", "assets/rock-hand-comp.png");
+                }, 1000)
             }
 
             $(".hand").removeClass("upDown-animation");
@@ -47,14 +76,42 @@ $(document).ready(function() {
         $(".hand").addClass("upDown-animation");
 
         setTimeout(function() {
+            $(".player-hand").attr("src", "assets/paper-hand.png")
             if(answer === 0) {
-                alert("YOU WON");
                 $(".player-score-value").text(++player_score);
+                $(".result").text("YOU WON");
+                $(".result-box").fadeIn(100);
+
+                $(".computer-hand").attr("src", "assets/rock-hand-comp.png");
+
+                setTimeout(function() {
+                    $(".result-box").fadeOut(200);
+                    $(".player-hand").attr("src", "assets/rock-hand.png");
+                    $(".computer-hand").attr("src", "assets/rock-hand-comp.png");
+                }, 1000)
             } else if(answer == 1) {
-                alert("TIE");
+                $(".result").text("IT'S A TIE");
+                $(".result-box").fadeIn(100);
+
+                $(".computer-hand").attr("src", "assets/paper-hand-comp.png");
+
+                setTimeout(function() {
+                    $(".result-box").fadeOut(200);
+                    $(".player-hand").attr("src", "assets/rock-hand.png");
+                    $(".computer-hand").attr("src", "assets/rock-hand-comp.png");
+                }, 1000)
             } else {
-                alert("YOU LOST!");
                 $(".computer-score-value").text(++computer_score);
+                $(".result").text("YOU LOST");
+                $(".result-box").fadeIn(100);
+
+                $(".computer-hand").attr("src", "assets/scissor-hand-comp.png");
+
+                setTimeout(function() {
+                    $(".result-box").fadeOut(200);
+                    $(".player-hand").attr("src", "assets/rock-hand.png");
+                    $(".computer-hand").attr("src", "assets/rock-hand-comp.png");
+                }, 1000)
             }
 
             $(".hand").removeClass("upDown-animation");
@@ -69,14 +126,43 @@ $(document).ready(function() {
         $(".hand").addClass("upDown-animation");
 
         setTimeout(function() {
+            $(".player-hand").attr("src", "assets/scissor-hand.png")
+
             if(answer === 1) {
-                alert("YOU WON");
                 $(".player-score-value").text(++player_score);
+                $(".result").text("YOU WON");
+                $(".result-box").fadeIn(100);
+
+                $(".computer-hand").attr("src", "assets/paper-hand-comp.png");
+
+                setTimeout(function() {
+                    $(".result-box").fadeOut(200);
+                    $(".player-hand").attr("src", "assets/rock-hand.png");
+                    $(".computer-hand").attr("src", "assets/rock-hand-comp.png");
+                }, 1000)
             } else if(answer == 2) {
-                alert("TIE");
+                $(".result").text("ITS A TIE");
+                $(".result-box").fadeIn(100);
+
+                $(".computer-hand").attr("src", "assets/scissor-hand-comp.png");
+
+                setTimeout(function() {
+                    $(".result-box").fadeOut(200);
+                    $(".player-hand").attr("src", "assets/rock-hand.png");
+                    $(".computer-hand").attr("src", "assets/rock-hand-comp.png");
+                }, 1000)
             } else {
-                alert("YOU LOST!");
                 $(".computer-score-value").text(++computer_score);
+                $(".result").text("YOU LOST");
+                $(".result-box").fadeIn(100);
+
+                $(".computer-hand").attr("src", "assets/rock-hand-comp.png");
+
+                setTimeout(function() {
+                    $(".result-box").fadeOut(200);
+                    $(".player-hand").attr("src", "assets/rock-hand.png");
+                    $(".computer-hand").attr("src", "assets/rock-hand-comp.png");
+                }, 1000)
             }
 
             $(".hand").removeClass("upDown-animation");

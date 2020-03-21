@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu|Luckiest+Guy&display=swap');
 body {
     background-image: linear-gradient(to right, #e0c3fc 0%, #8ec5fc 100%);
     font-family: 'Ubuntu', sans-serif;
@@ -84,6 +84,10 @@ body {
     .player-score , .computer-score {
         font-size: 1.1rem;
     }
+
+    .heading {
+        font-size: 2rem;
+    }
 }
 
 .area {
@@ -167,5 +171,43 @@ body {
 
     100% {
         transform: translateY(0);
+    }
+}
+
+.result-box {
+    position: absolute;
+
+    top: 40%;
+    left: 37%;
+    right: 40%;
+
+    background-color: red;
+    border: brown 10px solid;
+
+    width: 25%;
+    height: 25%;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.result {
+    font-size: 4rem;
+    font-family: 'Luckiest Guy', cursive;
+    color: black;
+
+    padding: auto;
+}
+
+@media screen and (max-width: 450px) {
+    .result {
+        font-size: 2rem;
+    }
+
+    .result-box {
+        height: 17%;
     }
 }
